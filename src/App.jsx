@@ -40,7 +40,7 @@ function App() {
     setTarefas([...tarefas, newTarefa]);
   }
   return (
-    <>
+    <div className="container">
       <Title className="Title">Gerenciar Tarefas</Title>
       <AddTarefa onAddTarefaSubmit={onAddTarefaSubmit} />
       <Tarefas
@@ -48,7 +48,7 @@ function App() {
         onTarefaClick={onTarefaClick}
         onDeleteTarefa={onDeleteTarefa}
       />
-    </>
+    </div>
   );
 }
 export default App;

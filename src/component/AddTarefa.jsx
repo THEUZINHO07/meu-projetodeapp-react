@@ -8,19 +8,21 @@ function AddTarefa({ onAddTarefaSubmit }) {
   return (
     <div>
       <Input
-        className="Ipt"
+        className=""
         type="text"
         placeholder="Titulo da tarefa"
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       />
       <Input
+        className=""
         type="text"
         placeholder="Descrição da Tarefa"
         value={description}
         onChange={(event) => setdescription(event.target.value)}
       />
       <button
+        className="button"
         onClick={() => {
           if (!title.trim() || !description.trim()) {
             return alert("Preencha todos os campos");

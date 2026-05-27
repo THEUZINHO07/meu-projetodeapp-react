@@ -11,7 +11,7 @@ function TarefaPage() {
     <div>
       <div>
         <button onClick={() => navigate(-1)}>Voltar</button>
-        <Title>Detalhes da Tarefa</Title>
+        <Title className="">Detalhes da Tarefa</Title>
       </div>
       <div>
         <h2>{title}</h2>
