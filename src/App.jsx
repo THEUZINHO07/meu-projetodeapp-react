@@ -11,7 +11,7 @@ function App() {
   );
 
   useEffect(() => {
-    localStorage.setItem("Tarefas", JSON.stringify(tarefas));
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
   }, [tarefas]);
 
   function onTarefaClick(tarefaId) {

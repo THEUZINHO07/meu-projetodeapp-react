@@ -1,16 +1,92 @@
-.Title {
-color: rgb(154, 201, 218);
-font-family: Arial, Helvetica, sans-serif;
+
+body {
+  margin: 10px;/*espaçamento na margem do conteúdo
+  padding: 10px; /*espaçamento entre o titulo gerenciar tarefas e a caixa com o conteúdo do gerenciador*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(27, 30, 32);
+  background-color: rgb(214, 214, 214);
+  background-image: url(/src/assets/808s_and_heartbreak_wallpaper_by_homogeneous1.jpg); /*adicionar um papel de parede de fundo para o site*/
 }
-.button {
-background-color: rgb(150, 150, 219);
-margin-bottom: 10px;
+#root {
+  display: flex;  /*torna possível a manipulação dos inputs dentro da caixa*/
+  justify-content: center; /*justifica o conteúdo a caixa, inputs e titulo no  centro*/
+  align-items: center; /*alinha os itens todos ao centro*/
 }
 
+
 .container {
-background-color: rgb(192, 134, 239);
-padding: 10px;
-max-width: 100%px;
-background-size: 100px;
+  width: 100%;
+  max-width: 400px; /*largura da caixa*/
+  display: flex;
+  flex-direction: column; /*altera a distribuição das barras*/
+  gap: 14px; 
+  border-radius: 10px; /*arredonda as bordas do cartão*/
+  background-color: rgb(123, 123, 123);
+  height: 440px;
+  align-items: center; /*centraliza os itens*/
+  margin: 15px; /*margem da caixa*/
+  border: 5px solid black;
+}
+
+
+.box {
+  border: 1px solid #ccc; 
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; /*distanciamento entre as colunas*/
+  border-radius: 5px; 
+  height: 200px;
+  background-color: #ddd;
+  max-height: 500px; /*aumenta o tamanho máximo da caixa interior*/
+  border-style: dotted; /*adiciona uma linha pontilhada na borda*/
+  border-color: rgb(61, 117, 98); /*muda a cor da linha pontilhada na borda*/
+  
+}
+
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  box-sizing: border-box; /*para ajustar a caixa dentro da caixa cinza claro*/
+  padding: 10px;
+  color: black;
+  background-color: rgb(106, 162, 149);
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 5px solid rgb(30, 54, 55);
+  border-color: aliceblue;
+}
+
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px; 
+  margin: 10;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(252, 126, 126);
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 200px;
+  padding: 10px;
+ 
 }
 

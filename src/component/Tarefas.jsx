@@ -12,15 +12,22 @@ function Tarefas({ tarefas, onTarefaClick, onDeleteTarefa }) {
   }
 
   return (
-    <ul>
+    <ul className="box list-container">
       {tarefas.map((tarefa) => (
-        <li key={tarefa.id}>
+        <li key={tarefa.id} className="task-item">
           <button onClick={() => onTarefaClick(tarefa.id)}>
             {tarefa.isCompleted}
             {tarefa.title}
           </button>
-          <Button onClick={() => onSeeDetailsClick(tarefa)}>Dt</Button>
-          <Button onClick={() => onDeleteTarefa(tarefa.id)}>De</Button>
+          <div className="task-actions">
+            <Button onClick={() => onSeeDetailsClick(tarefa)}>
+              {" "}
+              <i class="bi bi-info-circle"></i>
+            </Button>
+            <Button onClick={() => onDeleteTarefa(tarefa.id)}>
+              <i class="bi bi-trash"></i>
+            </Button>
+          </div>
         </li>
       ))}
     </ul>

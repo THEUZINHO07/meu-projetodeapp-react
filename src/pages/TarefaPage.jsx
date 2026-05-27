@@ -10,8 +10,10 @@ function TarefaPage() {
   return (
     <div>
       <div>
-        <button onClick={() => navigate(-1)}>Voltar</button>
-        <Title className="">Detalhes da Tarefa</Title>
+        <button onClick={() => navigate(-1)}>
+          <i class="bi bi-arrow-left fs-1"></i>
+        </button>
+        <Title>Detalhes da Tarefa</Title>
       </div>
       <div>
         <h2>{title}</h2>
